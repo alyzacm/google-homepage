@@ -1,33 +1,42 @@
-<style type="text/css">
-	/*.button{
-		width: 100%;
-		text-align: center;
-	}
-	.searchbar{
-		width: 100%;
-		text-align: center;
-	}*/
-	body {
-		width: 100%;
-		text-align: center;
-	}
-</style>
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <title>Google</title>
   </head>
   <body>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-	    <div class="searchbar">
-	    	<input type="text" name="search" placeholder="Search..">
+
+  	<header>
+  		<nav>
+  			<div class="topnav">
+			  <a href="#about">About</a>
+			  <a href="#store">Store</a>
+			  <a href="#gmail">Gmail</a>
+			  <a href="#images">Images</a>
+			  <a href="#sign-in">Sign in</a>
+			</div>
+  		</nav>
+  	</header>
+
+  	<main>
+  		<div class="google-image">
+  			<img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+  		</div>
+
+	    <div class="search-block">
+	    	<form action="#">
+		    	<input type="text" name="search">
+		    	<div class="search-buttons">
+					<button type="submit">Google Search</button>
+					<button type="submit">I'm Feeling Lucky</button>
+				</div>
+			</form>
 		</div>
-		<div class="button">
-			<button type="submit">Google Search</button>
-			<button type="submit">I'm Feeling Lucky</button>
-		</div>
+  	</main>
+    
+    <footer>
+    </footer>
 
   </body>
 </html>

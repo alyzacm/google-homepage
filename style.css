@@ -1,0 +1,52 @@
+body {
+	font-family: arial,sans-serif;
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+}
+
+form {
+	display: inline-block;
+}
+
+.google-image {
+	margin: auto;
+	margin-top: 109px;
+	width: 272px;
+}
+
+.search-block {
+	/*position: relative;
+	margin: 25px auto;
+	width: 50%;*/
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.search-buttons {
+	border-radius: 4px;
+	margin: 11px 4px;
+	padding: 0 16px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  /*color: #f2f2f2;*/
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  /*background-color: #ddd;*/
+  /*color: black;*/
+}
