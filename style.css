@@ -1,26 +1,119 @@
-body {
-	font-family: arial,sans-serif;
-	font-size: 14px;
-	width: 100%;
-	text-align: center;
+nav {
+  overflow: hidden;
+  margin: 7px 0 0 10px;
+  /*position: absolute;*/
 }
 
-form {
+/* Style the links inside the navigation bar */
+nav a {
+  /*margin: 7px 0 0 10px;*/
+  /*position: absolute;*/
+  /*display: inline-block;*/
+  float: left;
+  color: #000;
+  opacity: 0.75;
+  text-decoration: none;
+  /*font-size: 13px;*/
+  /*text-align: center;*/
+  /*padding: 14px 15px;*/
+  padding-top: 14px;
+  padding-left: 15px;
+
+}
+
+/* Underline links on hover */
+nav a:hover {
+  text-decoration: underline;
+}
+
+.navRight {
+	min-width: 165px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align:right;
+	float:right;
+}
+
+#apps {
+	opacity: .66;
+	position: relative;
+	bottom: 5px;
+}
+
+#signin {
+	
+	font-weight: bold;
+	text-align: left;
+	outline: none;
+	border: 1px solid #4285f4;
+	background: #4285f4;
+	padding: 0 12px !important;
+	border-radius: 2px;
+	height: 28px;
+	color: #fff;
+	/*margin: 6px 10px;*/
+	margin: 6px 6px 6px 20px;
+	/*margin-left: 14px;*/
 	display: inline-block;
+}
+
+body, a{
+	font-family: arial,sans-serif;
+	font-size: 13px;
+	/*width: 100%;*/
+	/*text-align: center;*/
 }
 
 .google-image {
 	margin: auto;
-	margin-top: 109px;
+	padding-top: 109px;
 	width: 272px;
+	height: 92px;
 }
 
-.search-block {
-	/*position: relative;
+.search-form {
+	position: relative;
 	margin: 25px auto;
-	width: 50%;*/
+	width: 50%;
+	/*margin: 0 auto;*/
+	/*padding-top: 6px;*/
+	/*display: inline-block;*/
+}
+
+.search-box {
+	padding: 1px 2px;
+	background: #fff;
+	display: flex;
+	border: 1px solid #dfe1e5;
+	box-shadow: none;
+	border-radius: 24px;
+	/*z-index: 3;*/
+	/*height: 44px;*/
 	margin: 0 auto;
-	display: inline-block;
+	width: 582px;
+	outline: none;
+	font: 16px;
+	text-align: start;
+	line-height: 34px;
+	height: 34px;
+}
+
+.search-box:hover {
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+	border-color: rgba(223, 225, 229, 0);
+}
+
+input {
+	-webkit-writing-mode: horizontal-tb !important;
+}
+
+.magnifying-image {
+	color: #9AA0A6;
+	height: 20px;
+	width: 20px;
+	top: 13px;
+	left: 13px;
+	position: absolute;
 }
 
 .search-buttons {
@@ -31,22 +124,4 @@ form {
 	cursor: pointer;
 }
 
-.topnav {
-  overflow: hidden;
-}
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  /*color: #f2f2f2;*/
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  /*background-color: #ddd;*/
-  /*color: black;*/
-}
