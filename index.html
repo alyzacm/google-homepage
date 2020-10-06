@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-
+  	<!-- Navigation bar here -->
 	<nav>
 		<div class="navLeft">
 		  <a href="#about">About</a>
@@ -20,11 +20,11 @@
 		  <a href="#Gmail">Gmail</a>
 		  <a href="#images">Images</a>
 		  <a href="#apps"> <i id="apps" class="material-icons">apps</i></a>
-		  <!-- <a id="signin" href="#sign-in">Sign in</a> -->
 		  <input type="button" id="signin" value="Sign in">
 		 </div>
 	</nav>
 
+	<!-- Google logo and search bar here -->
   	<main>
   		<div class="google-image">
   			<img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
@@ -32,20 +32,38 @@
 
 	    <div class="search-form">
 	    	<form action="#">
-		    	<input type="text" name="search" class="search-box">
-		    	<div class="magnifying-image">
-					<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
-				</div>
+		    	<input type="text" class="search-bar" id="search-cursor">
 		    	<div class="search-buttons">
-					<button type="submit">Google Search</button>
-					<button type="submit">I'm Feeling Lucky</button>
+					<button type="submit" id="search-bttn" class="bttn">Google Search</button>
+					<button type="submit" id="lucky-bttn" class="bttn">I'm Feeling Lucky</button>
 				</div>
+		    	<div class="magnifying-image">
+					<i class="material-icons">search</i>
+				</div>
+				<div class="mic-image">
+					<i class="material-icons">mic</i>
+				</div>
+		    	
 				
 			</form>
 		</div>
   	</main>
     
+
+    <!-- Footer here -->
     <footer>
+    	<div class ="navBotLeft">
+    		<a href="#">Advertising</a>
+    		<a href="#">Business</a>
+    		<a href="#">How Search works</a>
+
+    	</div>
+    	<div class ="navBotRight">
+    		<a href="#">Privacy</a>
+    		<a href="#">Terms</a>
+    		<a href="#">Setting</a>
+
+    	</div>
     </footer>
 
   </body>

@@ -1,21 +1,14 @@
 nav {
   overflow: hidden;
   margin: 7px 0 0 10px;
-  /*position: absolute;*/
 }
 
 /* Style the links inside the navigation bar */
 nav a {
-  /*margin: 7px 0 0 10px;*/
-  /*position: absolute;*/
-  /*display: inline-block;*/
   float: left;
   color: #000;
   opacity: 0.75;
   text-decoration: none;
-  /*font-size: 13px;*/
-  /*text-align: center;*/
-  /*padding: 14px 15px;*/
   padding-top: 14px;
   padding-left: 15px;
 
@@ -26,22 +19,24 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Nav bar right side positioning*/
 .navRight {
 	min-width: 165px;
 	padding-left: 30px;
 	padding-right: 30px;
-	text-align:right;
-	float:right;
+	text-align: right;
+	float: right;
 }
 
+/* This id styles and positions the apps icon*/
 #apps {
 	opacity: .66;
 	position: relative;
 	bottom: 5px;
 }
 
+/* This id styles and positions the sign-in button, some values taken from original Google site*/
 #signin {
-	
 	font-weight: bold;
 	text-align: left;
 	outline: none;
@@ -51,9 +46,7 @@ nav a:hover {
 	border-radius: 2px;
 	height: 28px;
 	color: #fff;
-	/*margin: 6px 10px;*/
 	margin: 6px 6px 6px 20px;
-	/*margin-left: 14px;*/
 	display: inline-block;
 }
 
@@ -64,6 +57,7 @@ body, a{
 	/*text-align: center;*/
 }
 
+/* Google logo in the center of the page, some values from original Google site*/
 .google-image {
 	margin: auto;
 	padding-top: 109px;
@@ -75,27 +69,18 @@ body, a{
 	position: relative;
 	margin: 25px auto;
 	width: 50%;
-	/*margin: 0 auto;*/
-	/*padding-top: 6px;*/
-	/*display: inline-block;*/
 }
 
-.search-box {
-	padding: 1px 2px;
+.search-bar {
+	padding: 0px 6px 0 16px;
 	background: #fff;
 	display: flex;
 	border: 1px solid #dfe1e5;
-	box-shadow: none;
 	border-radius: 24px;
-	/*z-index: 3;*/
-	/*height: 44px;*/
 	margin: 0 auto;
-	width: 582px;
+	width: 545px;
 	outline: none;
-	font: 16px;
-	text-align: start;
-	line-height: 34px;
-	height: 34px;
+	height: 40px;
 }
 
 .search-box:hover {
@@ -103,25 +88,59 @@ body, a{
 	border-color: rgba(223, 225, 229, 0);
 }
 
-input {
-	-webkit-writing-mode: horizontal-tb !important;
+#search-cursor {
+	/*-webkit-writing-mode: horizontal-tb !important;*/
+	padding-left: 37px;
 }
 
+/* Magnifying glass image in search bar taken from original Google site*/
 .magnifying-image {
 	color: #9AA0A6;
 	height: 20px;
 	width: 20px;
-	top: 13px;
-	left: 13px;
+	top: 16px;
+	left: 75px;
+	position: absolute;
+	
+	
+	/*padding-right: 20px;*/
+	margin-top: -5px;
+}
+
+.mic-image {
+	top: 12px;
+	right: 70px;
+
 	position: absolute;
 }
 
-.search-buttons {
-	border-radius: 4px;
+
+.search-buttons{
+	display: block;
+	text-align: -webkit-center;
+	padding-top: 18px;
+}
+
+.bttn {
+	background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
 	margin: 11px 4px;
+	border-radius: 4px;
+	color: #5F6368;
+	font-family: arial,sans-serif;
+	font-size: 14px;
 	padding: 0 16px;
+	height: 36px;
+	width: 140px;
+	
 	text-align: center;
 	cursor: pointer;
+	appearance: push-button;
+}
+
+#lucky-bttn {
+	width: 150px;
 }
 
 
